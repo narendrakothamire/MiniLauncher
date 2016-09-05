@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.softwares.swamisamarth.minlauncher.viewmodels.MainItemViewModel"/>
+    </data>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@android:color/black"
+            android:onClick="@{() -> viewmodel.clickHandler()}"
+            android:text="@{viewmodel.alphabateChar}"/>
+
+</layout>
